@@ -1,0 +1,92 @@
+html,body{
+	height: 100%;
+}
+*{
+	box-sizing: border-box;
+/* 其他浏览器用盒子模型*/
+	-webkit-box-sizing: border-box; /* 兼容火狐Firefox */
+}
+.cyz_header{
+background: red;
+	height: 140px;
+	margin-bottom: -140px;
+	/*绝对定位*/
+	position: relative;
+}
+.cyz_header_top{
+	height: 100px;
+		background: orange;
+}
+.cyz_header_nav{
+	height:40px;
+		background: blue;
+}
+
+.cyz_main_container{
+	background: green;
+	min-height: 100%;
+	padding: 140px 0px 150px 0px;
+}
+.cyz_footer{
+	background: red;
+	height: 150px;
+	/*属性设置元素的上外边距*/
+	margin-top:-150px;
+}
+.cyz_footer_link{
+	
+	height:110px;
+	text-align: center;
+}
+
+.cyz_footer_copyright{
+	height:40px;
+	line-height: 40px;
+	text-align: center;
+	background: blue;
+}
+/*去掉默认-15的边距*/
+.cyz_main_row{
+	padding-left: 15px;
+	padding-left: 15px;
+}
+
+.cyz_main_left{
+	
+	background: yellow;
+}
+.cyz_main_right{
+	background: orange;
+}
+.cyz_logo{
+	width: 220px;
+	height: 100px;
+	background: white;
+	float: left;
+}
+.cyz_slogan{
+	display: inline-block;
+	color:#FFF;
+	font-size: 20px;
+	/*距离顶端*/
+	margin-top:40px;
+	/*距离左边*/
+	margin-left: 20px;
+}
+.cyz_header_right{
+	float: right;
+	height:100px;
+	background: cadetblue;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.cyz_searchBox{
+	
+	margin-top: 40px
+	;
+	display: inline-block;
+}
+.cyz_user{
+	
+	display:inline-block;
+}
