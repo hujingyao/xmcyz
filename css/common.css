@@ -1,10 +1,27 @@
 html,body{
 	height: 100%;
 }
+body{
+	font-family: "微软雅黑";
+}
 *{
 	box-sizing: border-box;
 /* 其他浏览器用盒子模型*/
 	-webkit-box-sizing: border-box; /* 兼容火狐Firefox */
+	padding: 0px;
+	margin: 0px;
+}
+
+ul{
+	list-style: none;
+}
+li{
+	list-style: none;
+}
+a{text-decoration: none;}
+/*不希望鼠标放上去有一个下滑线 伪类*/
+a:hover{
+	text-decoration: none;
 }
 .cyz_header{
 background: red;
@@ -12,23 +29,55 @@ background: red;
 	margin-bottom: -140px;
 	/*绝对定位*/
 	position: relative;
+	background: url(imgs/header_bg.jpg) repeat-x;
+	
 }
 .cyz_header_top{
 	height: 100px;
-		background: orange;
+	
 }
 .cyz_header_nav{
 	height:40px;
-		background: blue;
+		
+}
+.cyz_nav{
+	
+	height: 40px;
+}
+.cyz_nav li{
+	float: left;
+	padding: 0px 10px;
+	display: inline-block;
+}
+.cyz_nav li>a:hover{
+	
+	color: #ff0;
+}
+
+/*li 元素子元素的 a*/
+.cyz_nav li>a{
+	height: 40px;
+	line-height: 40px;
+	width:100px;
+	diasply:inline-block;
+	text-align: center;
+	color: #FFF;
+	}
+	
+	/*去掉第一个斜杠*/
+.cyz_nav li+li:before{
+	content: "/\00a0";
+		color:#25465A;
 }
 
 .cyz_main_container{
-	background: green;
+	background: url(imgs/bodybg.png);
 	min-height: 100%;
 	padding: 140px 0px 150px 0px;
+
 }
 .cyz_footer{
-	background: red;
+	background-color: #2d3237;
 	height: 150px;
 	/*属性设置元素的上外边距*/
 	margin-top:-150px;
@@ -39,11 +88,38 @@ background: red;
 	text-align: center;
 }
 
+.cyz_footer_link  h4{
+	color:#f8f8f8;
+	
+	}
+
+.cyz_footer_link  .hline div {
+	height: 3px;
+	border-bottom:1px solid #000;
+	}
+	
+.cyz_links{
+	margin-top: 10px;
+}	
+	
+.cyz_links a{
+	margin: 5px;
+	color:#99CCFF;
+	font-size: 12PX;
+}
+.cyz_links a:hover{
+	
+	
+	color:#fff;
+}
+
+
 .cyz_footer_copyright{
 	height:40px;
 	line-height: 40px;
 	text-align: center;
-	background: blue;
+	background-color: #23282d;
+	color:#666;
 }
 /*去掉默认-15的边距*/
 .cyz_main_row{
@@ -52,16 +128,17 @@ background: red;
 }
 
 .cyz_main_left{
+	padding: 10px 5px 10px  0px  ;
 	
-	background: yellow;
 }
 .cyz_main_right{
-	background: orange;
+	
+	padding: 10px 0px 10px  5px  ;
 }
 .cyz_logo{
 	width: 220px;
 	height: 100px;
-	background: white;
+background: url(imgs/logo.png) center center  no-repeat;
 	float: left;
 }
 .cyz_slogan{
@@ -76,7 +153,7 @@ background: red;
 .cyz_header_right{
 	float: right;
 	height:100px;
-	background: cadetblue;
+
 	padding-right: 10px;
 	padding-left: 10px;
 }
@@ -89,4 +166,45 @@ background: red;
 .cyz_user{
 	
 	display:inline-block;
+}
+.cyz_searchBox input{
+	border: none;
+	height: 30px;
+	padding: 5px;
+		border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	font-size: 14px;
+}
+.cyz_searchBox button{
+	
+	font-size: 14px;
+	height: 30px;
+	margin-left: -5px;
+	border:none;
+	background-color: #eee;
+	color: #555;
+	width: 60px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	
+}
+.cyz_searchBox input:focus{
+	outline:none;
+}
+.cyz_user{
+	padding-left: 10px;
+}
+.cyz_user .vline{
+	margin: 0px 5px;
+		color:#fff;
+	font-size: 16px;
+}
+.cyz_user a{
+	color:#fff;
+	font-size: 16px;
+	margin: 0px 5px;
+	
+}
+.cyz_user a:hover{
+	color: #Ea6103;
 }
