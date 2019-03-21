@@ -6,3 +6,6 @@
 	   -webkit-box-sizing: border-box; /* 兼容火狐Firefox */
     	/*绝对定位*/
 	   position: relative;
+第二知识点
+	/*li 元素子元素的 a*/
+	.cyz_nav li>a
