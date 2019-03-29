@@ -140,8 +140,23 @@ background: red;
 .cyz_articles .cyz_article_imgbox {
 	
 height: 160px;
-padding-right:-8px ;
+padding-right:8px ;
+position:relative;
 }
+.cyz_articles  .cyz_article_imgbox  .cyz_article_category{
+	display: inline-block;
+	
+	position: absolute;
+	top:10px;
+	left :20px;
+	color:#FFF ;
+	padding: 4px 10px;
+	font-size: 14px;
+	border-radius: 10px;
+	background: rgba(0,0,0,0.6);
+}
+
+
 
 .cyz_articles  .cyz_article_infobox {
 	
@@ -183,7 +198,8 @@ padding-left: 8px;
 .cyz_articles h1 a{
 
 	font-size: 18px;
-	color: #004276;
+	color: #333;
+	font-weight: 600;;
 	display: block;
 	
 }
@@ -263,7 +279,7 @@ background: url(imgs/logo.png) center center  no-repeat;
 .cyz_user{
 	padding-left: 10px;
 }
-.cyz_user .vline{
+.cyz_user .cyz_vline{
 	margin: 0px 5px;
 		color:#fff;
 	font-size: 16px;
@@ -276,4 +292,44 @@ background: url(imgs/logo.png) center center  no-repeat;
 }
 .cyz_user a:hover{
 	color: #Ea6103;
+}
+.cyz_articles .cyz_article_author{
+	
+	padding-right: 10px;
+	font-size: 14px;
+	color: gray;
+	
+}
+.cyz_articles .cyz_article_author .cyz_vline{
+	margin: 0px 5px;
+	color: gray;
+	font-size: 12px;;
+	
+	
+}
+.cyz_articles .cyz_auther_name{
+	color: #5f82d6;
+	
+}
+.cyz_articles .cyz_auther_labels span{
+	padding: 5px;
+}
+.cyz_articles .cyz_auther_labels{
+	/*不希望换行*/
+	white-space: nowrap;
+	/*超出隐藏""*/
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.cyz_articles .cyz_auther_labels i{
+font-size: 12px;
+}
+.cyz_articles .cyz_article{
+padding-top:  10px;
+	margin-bottom: 10px;
+	border-bottom: 1px dashed;
+}
+.cyz_articles h1 a:hover{
+	
+	color: #5F82D6;
 }
